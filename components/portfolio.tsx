@@ -2,13 +2,12 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Github, Linkedin, Mail, ExternalLink, Phone, MapPin, Download, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Github, Linkedin, Mail, ExternalLink, Download, ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 import { projects } from '@/data/projects'
 import Link from 'next/link'
 
 export default function Portfolio() {
-  const [activeSection, setActiveSection] = useState('hero')
   const [projectImageIndex, setProjectImageIndex] = useState<{[key: number]: number}>({})
 
   // Initialize image indices for all projects
